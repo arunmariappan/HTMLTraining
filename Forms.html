@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Example</title>
+</head>
+<body>
+<!-- form tag with default data transfer with GET method -->
+<form method="POST" action="saveUserInfo.jsp">
+    <h1>HTML5 Forms</h1>
+    <fieldset>
+        <legend>User Profile</legend>
+        <h4>Textbox</h4>
+        <!-- Input type text - Texbox -->
+        <label>User Name</label>
+        <input type="text" name="txtUserName" />
+
+        <h5>Password</h5>    
+        <!-- Input type password - Password / credentials -->
+        <label>Password</label>
+        <input type="password" name="passCredentials" />
+
+        <h5>Textarea</h5>    
+        <!-- Textarea -->
+        <label>Please give your Comments</label>
+        <textarea name="txtareaComments" cols="25" rows="5" ></textarea>
+
+        <h5>Button</h5>    
+        <!-- Button - Part of HTMl5 -->
+        <button>I am a Button</button>
+
+    </fieldset>
+    <br />
+    <fieldset>
+        <legend>User Personal Info</legend>
+
+        <h5>Department</h5>    
+        <!-- Form elemenet - Select - Drop down list -->
+        <label>Choose your department</label>
+        <select multiple>
+            <optgroup label="Non IT">
+                <option selected>IT Support</option>     
+                <option>Human Resource</option>    
+            </optgroup>
+            <optgroup label="IT">
+                <option>IT</option> 
+                <option>Engineering</option>             
+                <option>Development</option> 
+            </optgroup>
+        </select>
+
+        <h5>Color</h5>    
+        <!-- Input type color - Colors -->
+        <label>Choose a color</label>
+        <input type="color" name="colorColorOption" />
+
+        <h5>Calender</h5>    
+        <!-- Input type calendar / date -->
+        <label>Date of Birth</label>
+        <input type="date" name="dateDateOfBirth" />
+        
+        <h5>Month</h5>    
+        <!-- Input type month and year -->
+        <label>Month of Joining</label>
+        <input type="month" name="monthDateOfJoining" />
+
+        <h5>Number</h5>    
+        <!-- Input type number -->
+        <label>Lucky Number</label>
+        <input type="number" name="numberLuckyNumber" />
+    </fieldset>
+        <h5>Range</h5>    
+        <!-- Input type Range -->
+        <label>Front End Skills out of 10 </label>
+        <input type="range" name="rangeSkillsLevel" />
+
+        <h5>Search</h5>    
+        <!-- Input type Search -->
+        <label>Search keyword </label>
+        <input type="search" name="searchKeyword" placeholder="enter keywords to search"  />
+
+        <h5>Checkbox</h5>    
+        <!-- Input type checkbox -->
+        <label>Hobbies </label>
+        <br />
+        <input type="checkbox" name="chkHobbies" value="cricket" />
+        <label>cricket</label>
+        <input type="checkbox" name="chkHobbies" value="singing" />
+        <label>singing</label>
+        <input type="checkbox" name="chkHobbies" value="music" />
+        <label>music</label>
+        <input type="checkbox" name="chkHobbies" value="trekking" />
+        <label>trekking</label>
+
+        <h5>Radio</h5>    
+        <!-- Input type radio -->
+        <label>Are you sure?</label>
+        <br />
+        <input type="radio" name="rdoConfirmation" value="yes"/>
+        <label>yes</label>
+        <input type="radio" name="rdoConfirmation" value="no"/>
+        <label>no</label>
+
+        <h5>File</h5>    
+        <!-- Input type file -->
+        <label>Please upload a resume</label>
+        <br />
+        <input type="file" name="fileProfile" />
+
+        <h5>button</h5>    
+        <!-- Input type button -->
+        <input type="button" name="btnSave" value="Save Information"/>
+
+        <h5>Submit</h5>    
+        <!-- Input type Submit -->
+        <input type="submit" name="btnSubmit" value="Submit Info"/>
+
+        <h5>Reset</h5>    
+        <!-- Input type Reset -->
+        <input type="reset" name="btnReset" value="Click here to clear all form elements"/>
+    
+</form>
+</body>
+</html>
